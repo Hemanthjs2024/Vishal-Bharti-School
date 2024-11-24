@@ -1,0 +1,59 @@
+body{
+    background:linear-gradient(45deg,violet,pink,orange)
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    box-sizing: border-box;
+    animation-iteration-count: infinite;
+    padding: 10px;
+}
+@keyframes scroll {
+    0%{
+        background-color: red;
+    }
+    20%{
+        background-color: aqua;
+    }
+    40%{
+        background-color: bisque;
+    }
+    60%{
+        background-color: white;
+    }
+    80%{
+        background-color: orange;
+    }
+    100%{
+        background-color: violet;
+    }
+    
+}
+#carouselImg{
+    height:650px ;
+    width: 100%;
+}
+#name{
+    height: 45px;
+    width: 500px;
+    position: absolute;
+    left: 35%;
+    text-align: center;
+    background-color: rgb(221, 221, 48);
+}
